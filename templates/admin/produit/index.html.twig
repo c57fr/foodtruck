@@ -1,0 +1,25 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Nos produits ! {% endblock %}
+
+{% block body %}
+<h5 class="titre-categorie">Ici tout les produits</h5>
+
+{% for produits in produit %}
+<div class="container2">
+<div class="card " style="width: 16rem;">
+    <img src="{{ asset('/uploads/'~produits.image )}}" alt="Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{produits.nom}}</h5>
+        <p class="card-text">{{produits.composition}}</p>
+        <a class="btn btn-primary" href="{{ path('admin_produit_edit', {id: produits.id}) }}">Editer<i
+                class="fa fa-edit"></i></a>
+        <form action="{{ path('admin_produit_delete', {id: produits.id}) }}" method="post" class="d-inline">
+            <button class="btn btn-danger">Supprimer<i class="fa fa-trash"></i></button>
+            <input type="hidden" name="_method" value="DELETE">
+        </form>
+    </div>
+</div>
+</div>
+{% endfor %}
+{% endblock %}

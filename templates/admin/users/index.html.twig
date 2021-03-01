@@ -1,0 +1,20 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Information du compte{% endblock %}
+
+{% block body %}
+<h5 class="titre1">Information du compte</h5>
+
+{% for user in users %}
+<div class="container-card">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Nom {{user.nom}}</h5>
+    <h5 class="card-title">Prénom {{user.prenom}}</h5>
+    <h6 class="card-title">E-mail {{user.email}}</h6>
+    <a href="{{ path('admin_users_edit', {'id': user.id}) }}" class="btn btn-warning">Modifier</a>
+    {% endfor %}
+   </div> 
+  </div>
+</div>
+{% endblock %}

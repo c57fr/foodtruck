@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos Produits{% endblock %}
+
+{% block body %}
+<h5 class="titre1">Nos produits</h5>
+<div class="card-marge">
+
+  {% for categories in categorie %}
+
+  <a href="{{ path('front_main_categ',{'id': categories.id})}}" type="button"
+    class="btn-categorie">{{categories.nom}}</a>
+
+  {% endfor %}
+</div>
+{% if produit %}
+
+{% for produits in produit %}
+
+<div class="container-card">
+  <div class="row mx-2">
+    <div class="card mb-3" style="width: 15rem;">
+      <h5 class="card-title">{{produits.nom}}</h5>
+      <img class="card-img-top" src="{{ asset('/uploads/'~produits.image )}}" {#alt="Card image cap"#} /></img>
+      <div class="card-body">
+        <h5 class="card-title">{{produits.composition}}</h5>
+        <p class="card-text"></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+{% else %}
+<p class="p32">PAS DE PRODUIT !!</p>
+{% endif %}
+
+{% endblock %}

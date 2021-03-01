@@ -1,0 +1,196 @@
+body
+{
+/*background-image: url("../image/fond.png");*/
+/*background-attachment: fixed;*/
+
+}
+
+.logo
+{
+    /*@media (max-width: 767px) */
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 1em;
+    
+}
+.logosite
+{
+  width: 25%;
+  height: auto;
+}
+
+/*----------------------- Menu Navigation -----------------------*/
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #F29500;
+  font-weight: bold;
+
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.container-nav
+{
+  display: inline-block;
+  text-align: center;
+}
+
+a.nav-link
+{
+background-color: #09559E;
+}
+.nav-link
+{
+background-color: #09559E;
+border-radius: 5px 5px 0px 0px;
+margin: 2px;
+}
+
+.nav-link:hover
+{
+  /*background-color: purple;*/
+/*background-color:#5CE1E6;*/
+border-radius: 5px 5px 0px 0px;
+margin: 2px;
+color:#F29500;
+background-color: white;
+border:2px solid #f29500;
+border-color: #f29500;
+}
+
+.navbar-toggler
+{
+  background-color: #09559E;
+} 
+
+span.navbar-toggler-ico
+{
+  background-color: white;
+} 
+
+ul.dropdown-menu.show
+{
+background-color:white;
+}
+
+ul.dropdown-menu.show:hover
+{
+background-color:white;
+}
+
+.container-nav
+{
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+}
+
+/*=========== sous nav  ====================*/
+a
+{
+  text-decoration: none;
+}
+.btn-categorie
+{
+background-color: #09559E;
+color : white;
+font-weight: bold;
+margin: 3px;
+padding: 5px;
+border-radius: 5px 5px 0px 0px;
+}
+.btn-categorie:hover
+{
+color:#F29500;
+background-color: white;
+border:2px solid #f29500;
+border-color: #f29500;
+}
+
+/*--------------- Acccueil --------------------*/
+.container-accueil
+{
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+}
+.cadre-accueil
+{
+border: solid 2px #09559E;
+margin: 10px;
+padding: 10px;
+width: 720px;
+border-radius: 25px;
+
+}
+
+.cadre-accueil2
+{
+border: solid 2px #F29500;
+margin: 10px;
+padding: 10px;
+width: 720px;
+border-radius: 25px;
+
+}
+
+.text-accueil
+{
+color:  #09559E;
+font-weight: bold;
+text-align: center;
+}
+
+.text-accueil2
+{
+color: #F29500;
+font-weight: bold;
+text-align: center;
+}
+
+/*===================== card ==========================*/
+.container-card
+{
+  display: inline-block;
+  padding: 5px;
+  
+}
+
+.card-marge
+{
+margin: 15px;
+}
+
+.card-title
+{
+  text-align: center;
+}
+
+.card-text
+{
+  text-align: center;
+}
+
+.card-img-top
+{
+  /*text-align: center;
+  width: 222px;
+  height: 200px;*/
+
+}
+
+/*===================== General ============================*/
+.container-general
+{
+  display: inline-block;
+  padding: 5px;
+}

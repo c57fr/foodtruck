@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Qui sommes nous ?{% endblock %}
+
+{% block body %}
+{% for quisommesnous in quisommesnous %}
+
+<div class="card" style="width: 25rem;">
+    <img src="{{ asset('/uploads/'~quisommesnous.image )}}" alt="Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">{{quisommesnous.description}}</p>
+      Mimi Galette propose des spécialités Locales dans le département de la Mayenne.
+
+Des Galettes 100 % Sarasin (blé noir, sans gluten) et des crêpes de froment sucrées.
+
+Visible sur le marché du centre le mercredi pour déguster la traditionnelle galette saucisse ou pour acheter les galettes et crêpes nature à garnir chez soi et dans les zones d'activité.
+
+MIMI GALETTE peut également se privatiser  pour des évenements chez les particuliers ( mariage, anniversaire, baptême, communion, brunch, crêpe party...) ou dans les entreprises (CE, réunions , etc...).  
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

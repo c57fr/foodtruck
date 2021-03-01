@@ -1,0 +1,31 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Toute les catégories{% endblock %}
+
+{% block body %}
+
+<div>Toute les catégories</div>
+
+<div class="card-marge">
+<a href="{{ path('admin_categorie_add')}}" type="button"
+    class="btn btn-success">Ajouter une catégorie</a>
+</div>
+{% for categories in categorie %}
+
+<div class="container-card">
+<div class="row my-2">
+<div class="card mb-3 mx-3" style="width: 15rem;">
+
+<div class="card-text">{{categories}}</div>
+
+<a class="btn btn-primary" href="{{ path('admin_categorie_edit', {id: categories.id}) }}">Editer<i class="fa fa-edit"></i></a>
+          <form action="{{ path('admin_categorie_delete', {id: categories.id}) }}" method="post" class="d-inline">
+            <button class="btn btn-danger">Supprimer<i class="fa fa-trash"></i></button>
+            <input type="hidden" name="_method" value="DELETE">
+          </form>
+
+</div>
+</div>
+</div>
+{% endfor %}
+{% endblock %}

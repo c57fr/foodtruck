@@ -1,0 +1,40 @@
+
+{% extends 'admin.html.twig' %}
+
+{% block title %}Nos Produits{% endblock %}
+
+{% block body %}
+<h5 class="titre1">Details</h5>
+<div class="card-marge">
+
+  {% for categories in categorie %}
+  
+  <a href="{{ path('admin_categorie',{'id': categories.id})}}" type="button"
+    class="btn btn-info">{{categories.nom}}</a>
+
+  {% endfor %}
+</div>
+{% if produit %}
+
+{% for produits in produit %}
+{#{{dump (produits)}}#}
+<div class="container-card"> 
+  <div class="row my-2">
+    <div class="card mb-3" style="width: 12rem;">
+      <img class="card-img-top" src="{{ asset('/uploads/'~produits.image )}}" {#alt="Card image cap"#}/>
+      <img class="card-img-top" src="" {#alt="Card image cap"#}/>
+      <div class="card-body">
+        <h5 class="card-title">{{produits.nom}}</h5>
+        <p class="card-text"></p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+{% else %}
+<p class="no-produit">PAS DE PRODUIT !!</p>
+{% endif %}
+
+{% endblock %}

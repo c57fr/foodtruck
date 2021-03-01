@@ -1,0 +1,434 @@
+body
+{
+/*background-image: url("../image/fond.png");*/
+/*background-attachment: fixed;*/
+
+}
+
+.logo
+{
+    /*@media (max-width: 767px) */
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 1em;
+    
+}
+.logosite
+{
+  width: 25%;
+  height: auto;
+}
+/*----------------------- Menu Navigation -----------------------*/
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #F29500;
+  font-weight: bold;
+
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.container-nav
+{
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+.navbar-nav
+{
+
+/*background-color:#5CE1E6;*/
+background-color: #09559E;
+
+}
+
+
+.nav-link
+{
+  background-color: #09559E;
+/*background-color:#5CE1E6;*/
+border-radius: 5px 5px 0px 0px;
+margin: 2px;
+}
+
+.nav-link:hover
+{
+  /*background-color: purple;*/
+/*background-color:#5CE1E6;*/
+border-radius: 5px 5px 0px 0px;
+margin: 2px;
+color:#F29500;
+background-color: white;
+border:2px solid #f29500;
+border-color: #f29500;
+}
+
+
+
+
+
+.navbar-toggler
+{
+  background-color: #09559E;
+} 
+
+ul.dropdown-menu.show
+{
+background-color:white;
+}
+
+ul.dropdown-menu.show:hover
+{
+background-color:white;
+}
+
+a.dropdown-item
+{
+/*background-color: red;*/
+color:#1C1C54;
+}
+
+a.dropdown-item:hover
+{
+/*background-color: red;*/
+color:#1C1C54;
+}
+
+h5
+{
+color:#1C1C54;
+
+}
+
+/*=========== sous nav  ====================*/
+.btn-categorie
+{
+background-color: #09559E;
+color : white;
+font-weight: bold;
+margin: 3px;
+padding: 5px;
+border-radius: 5px 5px 0px 0px;
+}
+.btn-categorie:hover
+{
+color:#F29500;
+background-color: white;
+border:2px solid #f29500;
+border-color: #f29500;
+}
+
+/*--------------- Acccueil --------------------*/
+
+.cadre-accueil
+{
+border: solid 2px #09559E;
+margin: 10px;
+padding: 10px;
+width: 720px;
+border-radius: 25px;
+
+}
+
+.cadre-accueil2
+{
+border: solid 2px #F29500;
+margin: 10px;
+padding: 10px;
+width: 720px;
+border-radius: 25px;
+
+}
+
+.text-accueil
+{
+color:  #09559E;
+font-weight: bold;
+text-align: center;
+}
+
+.text-accueil2
+{
+color: #F29500;
+font-weight: bold;
+text-align: center;
+}
+
+/*--------------- FOOTER --------------------*/
+.footer
+{
+  color: white;
+  /*background-color:red;*/
+  border-radius : 20px;
+  /*filter: blur(1px);*/
+
+}
+a
+{
+color: white;
+text-decoration: none;
+}
+
+/*---------------FORMULAIRE CONTACT FRONT END  --------------------*/
+
+
+#button1
+{
+margin:15px;
+background-color: #1C1C54;
+color: #fff;
+}
+
+/*encadrer de prevention*/
+
+.cadre
+{
+border:2px dashed orangered;
+margin: 10px;
+padding: 10px;
+width: 700px;
+}
+
+.cadre1
+{
+border:1rem solid red;
+margin: 10px;
+padding: 10px;
+width: 700px;
+}
+
+/*--------------- LOGIN FORM --------------------*/
+
+.login
+{
+color:#5CE1E6;
+}
+
+#button
+{
+margin:15px;
+background-color: transparent;
+color: #fff;
+}
+
+
+
+/*------------- New Nav ----------------------*/
+.navbar-nav
+{
+  background-color: transparent;
+}
+
+.navbar
+{
+  /*background-color: red;*/
+  text-align: center;
+}
+
+.item
+{
+background-color:#5CE1E6;;
+}
+
+.test
+{
+background-color: #5CE1E6;;
+padding: 10px;
+border-radius: 5px 5px 0px 0px;
+}
+
+
+/*===================== card ==========================*/
+.container2
+{
+  display: inline-block;
+  padding: 5px;
+  
+}
+
+.card-title
+{
+  text-align: center;
+}
+
+.card-text
+{
+  text-align: center;
+}
+
+.card-img-top
+{
+  /*text-align: center;
+  width: 222px;
+  height: 200px;*/
+
+}
+
+.cpanel
+{
+  color: white;
+}
+
+.cpanel:hover
+{
+  color: white;
+}
+
+
+.card-header
+{
+  background-color: #09559E;
+}
+
+.card-header:hover
+{
+  background-color: #F29500;
+}
+
+/*=========================*/
+
+.h3
+{
+  color: white;
+}
+
+.p5
+{
+  font-weight: bold;
+  color:#fff;
+}
+
+.p6
+{
+  color:#fff;
+}
+
+.titre /*fonctionne*/
+{
+  color:white;
+}
+
+.titre1
+{
+  color:white;
+  font-weight: 500;
+}
+
+/*--- footer ---*/
+.pr-1 /*fonctionne*/
+{
+  color:white;
+}
+
+.text-3 /*fonctionne*/
+{
+  color:white;
+}
+
+.footer-description
+{
+  color:white;
+}
+
+.container1
+{
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+}
+
+
+
+
+.form-control
+{
+  max-width: 250px;
+  /*display: flex;*/
+  align-items: center;
+}
+
+a
+{
+color: white;
+text-decoration: none;
+
+}
+
+label.required
+{
+  color:#1C1C54;
+  text-align:center;
+}
+legend.col-form-label.required
+{
+  /*color:#1C1C54;*/
+  color: white;
+}
+button.btn.btn-info
+{
+  margin: 10px;
+}
+
+div.form-group
+{
+  text-align:center;
+}
+form
+{
+  text-align: center;
+}
+
+.card-marge
+{
+margin: 15px;
+}
+.card-5
+{
+  background-color: #0DCAF0;
+  border-radius: 5px;
+}
+.p32
+{
+color: white;
+}
+.titre5
+{
+color:#1C1C54; 
+text-align: center;
+}
+.titre6
+{
+color:white; 
+text-align: center;
+
+}
+
+.card-6
+{
+  background-color: white;
+  width: 300px;
+  color: #1C1C54;
+}
+
+h1.titre8
+{
+  color: #1C1C54;
+
+}
+
+button.titre8.btn
+{
+  background-color: #0DCAF0;
+}
+

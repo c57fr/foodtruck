@@ -1,0 +1,31 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Nos Produits{% endblock %}
+
+{% block body %}
+<div class="container">
+<h5 class="titre1">Nos produits</h5>
+<div>
+<div class="cadre">
+Attention vous aller acceder au(x) differente(s) categorie(s) et leur produit(s)!!!!!!
+</div>
+<a href="{{ path('admin_produit_add')}}" type="button"
+    class="btn btn-success">Ajouter un produit</a>
+</div>
+
+<div>
+selectionner une categorie pour afficher tous les produits de cette catégorie
+</div>
+ <div>
+  {% for categories in categorie %}
+  <a href="{{ path('admin_categorie_detail',{'id': categories.id})}}" type="button"
+    class="btn btn-warning">{{categories.nom}}</a>
+{% endfor %}
+</div>
+
+<div class="cadre1">
+Attention certaine action sont irréversible!!!!!!
+</div>
+</div>
+</div>
+{% endblock %}

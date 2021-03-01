@@ -1,0 +1,24 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Hello QuisommesnousController!{% endblock %}
+
+{% block body %}
+
+Admin qui sommes nous
+{% for quisommesnous in quisommesnous %}
+
+<div class="card" style="width: 25rem;">
+    <img src="{{ asset('/uploads/'~quisommesnous.image )}}" alt="Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">{{quisommesnous.description}}</p>
+        <a class="btn btn-primary" href="{{ path('admin_quisommesnous_edit', {id: quisommesnous.id}) }}">Editer<i
+                class="fa fa-edit"></i></a>
+        <form action="{{ path('admin_quisommesnous_delete', {id: quisommesnous.id}) }}" method="post" class="d-inline">
+            <button class="btn btn-danger">Supprimer<i class="fa fa-trash"></i></button>
+            <input type="hidden" name="_method" value="DELETE">
+        </form>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

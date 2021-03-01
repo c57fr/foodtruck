@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ou nous trouver!{% endblock %}
+
+{% block body %}
+<div class="container">
+<h5 class="titre-categorie">Ou nous trouver</h5>
+
+</div>
+
+{% for trouvers in trouver %}
+<div class="container-card">
+<div class="card " style="width: 14rem;">
+    <h5 class="card-title">{{trouvers.ville}}</h5>
+    <p class="card-text">Le {{trouvers.jour}}</p>
+    <p class="card-text">de {{trouvers.debut}} à {{trouvers.fin}}</p>
+    <img src="{{ asset('/uploads/'~trouvers.image )}}" alt="Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{trouvers.adresse}}</h5>
+        
+    </div>
+</div>
+</div>
+{% endfor %}
+
+{% endblock %}

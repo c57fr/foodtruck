@@ -1,0 +1,66 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Interface d'administration générale!{% endblock %}
+
+{% block body %}
+<div class="container">
+<div class="container">
+    <div class="my-5 row">
+        <div class="card border-primary mb-3 mx-2" style="max-width: 20rem;">
+            <div class="card-header text-center">
+                <h2><a class="cpanel" href="{{ path('admin_categorie') }}">Catégorie(s)</a></h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title1">Toute les catégories</h4>
+                <p class="card-text">Ajouter , modifier ou supprimer les catgeories.</p>
+            </div>
+        </div>
+        <div class="card border-dark mb-3 mx-2" style="max-width: 20rem;">
+            <div class="card-header text-center">
+                <h2><a class="cpanel" href="{{ path('admin_produit_categorie') }}">Produit(s)</a></h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Tous les produits</h4>
+                <p class="card-text">Ajouter , modifier ou supprimer des produits.</p>
+            </div>
+        </div>
+        <div class="card border-success mb-3 mx-2" style="max-width: 20rem;">
+            <div class="card-header text-center">
+                <h2><a class="cpanel" href="{{path('admin_trouver')}}">Où nous trouver</a></h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Localisation</h4>
+                <p class="card-text">Les differents endroits ou nous retrouver avec nos horaires.</p>
+            </div>
+        </div>
+        <div class="card border-info mb-3 mx-2" style="max-width: 20rem;">
+            <div class="card-header text-center">
+                <h2>A venir(s)</h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">A venir</h4>
+                <p class="card-text">Dans le but d'une futur option a developper</p>
+            </div>
+        </div>
+        <div class="card border-warning mb-3 mx-2" style="max-width: 20rem;">
+            <div class="card-header text-center">
+                <h2>A venir(s)</h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">A venir</h4>
+                <p class="card-text">Dans le but d'une futur option a developper</p>
+            </div>
+        </div>
+        <div class="card border-danger mb-3 mx-2" style="max-width: 20rem;">
+            <div class="card-header text-center">
+                <h2><a class="cpanel" href="{{ path('admin_users') }}">Information</a></h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Détail du compte</h4>
+                <p class="card-text">Modifier mes informations de connexion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

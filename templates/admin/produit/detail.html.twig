@@ -1,0 +1,40 @@
+
+{% extends 'admin.html.twig' %}
+
+{% block title %}Les categories et leur produits associés{% endblock %}
+
+{% block body %}
+<h5 class="titre1">Les categories et leur produits associés</h5>
+<div class="card-marge">
+
+  {% for categories in categorie %}
+
+  <a href="{{ path('admin_categorie_detail',{'id': categories.id})}}" type="button"
+    class="btn btn-warning">{{categories.nom}}</a>
+
+  {% endfor %}
+</div>
+{% if produit %}
+
+{% for produits in produit %}
+<div class="container-card">
+<div class="card " style="width: 14rem;">
+    <img src="{{ asset('/uploads/'~produits.image )}}" alt="Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{produits.nom}}</h5>
+        <p class="card-text">{{produits.composition}}</p>
+        <a class="btn btn-primary" href="{{ path('admin_produit_edit', {id: produits.id}) }}">Editer<i
+                class="fa fa-edit"></i></a>
+        <form action="{{ path('admin_produit_delete', {id: produits.id}) }}" method="post" class="d-inline">
+            <button class="btn btn-danger">Supprimer<i class="fa fa-trash"></i></button>
+            <input type="hidden" name="_method" value="DELETE">
+        </form>
+    </div>
+</div>
+</div>
+{% endfor %}
+{% else %}
+<p class="p32">PAS DE PRODUIT !!</p>
+{% endif %}
+
+{% endblock %}
